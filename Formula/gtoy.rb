@@ -2,16 +2,16 @@
 class Gtoy < Formula
   desc "Toy to operate github"
   homepage "https://github.com/yukihirop/github-toy"
-  version "0.1.10"
+  version "0.1.11"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/yukihirop/github-toy/releases/download/v0.1.10/github-toy_0.1.10_Darwin_x86_64.tar.gz"
-    sha256 "15d21db26a65182b3309f9e63ea2b8777d37fdf5a88c02344f48e22b098f353c"
+    url "https://github.com/yukihirop/github-toy/releases/download/v0.1.11/github-toy_0.1.11_Darwin_x86_64.tar.gz"
+    sha256 "76f3d6a24612475c8a38cdee94e8b0122255e8c13187e3aaddf8f8d601af2e5f"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/yukihirop/github-toy/releases/download/v0.1.10/github-toy_0.1.10_Linux_x86_64.tar.gz"
-      sha256 "c6255d9c057021c413558c34d391055a23baebabbd9b81aa72214be1ef29c5a3"
+      url "https://github.com/yukihirop/github-toy/releases/download/v0.1.11/github-toy_0.1.11_Linux_x86_64.tar.gz"
+      sha256 "0d4674bfebf29055eb8a344bfe922a30150de55cfcdd9d532b99ae40e56f1ca7"
     end
   end
   
