@@ -2,23 +2,23 @@
 class Gtoy < Formula
   desc "Toy to operate github"
   homepage "https://github.com/yukihirop/github-toy"
-  version "0.1.5"
+  version "0.1.6"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/yukihirop/github-toy/releases/download/v0.1.5/github-toy_0.1.5_Darwin_x86_64.tar.gz"
-    sha256 "93f7086851786931fbac31d7748bd6e7f9801eaaf0beb427fb3fe125cf55820d"
+    url "https://github.com/yukihirop/github-toy/releases/download/v0.1.6/github-toy_0.1.6_Darwin_x86_64.tar.gz"
+    sha256 "bd7e2c39cda432f6dbda78f7f9cbb5d05ae8bcebd5f3b338277ed65a82f61cdb"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/yukihirop/github-toy/releases/download/v0.1.5/github-toy_0.1.5_Linux_x86_64.tar.gz"
-      sha256 "69d14d1094bdf6b8703669a34759d80ea8913d03580491f047317d6ce8ee51b8"
+      url "https://github.com/yukihirop/github-toy/releases/download/v0.1.6/github-toy_0.1.6_Linux_x86_64.tar.gz"
+      sha256 "f2b231c06da4383b309cd0081706a7a5ed87ba54301cb4d23d73e96a4640e96c"
     end
   end
   
   depends_on "go"
 
   def install
-    bin.install "gtoy"
+    bin.install "bin/gtoy"
   end
 
   test do
